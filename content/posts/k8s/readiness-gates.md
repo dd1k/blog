@@ -1,7 +1,7 @@
 ---
 title: "使用 Readiness Gates 暂时摘除流量"
 date: 2023-03-28T16:05:06+08:00
-draft: true
+draft: false
 tags:
   - k8s
 ---
