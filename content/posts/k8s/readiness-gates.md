@@ -81,7 +81,9 @@ Conditions:
 ```
 
 可以看到，该 Pod Ready  状态值为 False，有一条 Readiness Gates 状态值为 none。
-注意：设置了 Readiness Gates 的容器启动后状态是 NotReady 的，要设置 status 中Readiness Gates的值为 True 才会 Ready。
+
+<font color=#FF0000>注意：设置了 Readiness Gates 的容器启动后状态是 NotReady 的，要设置 status 中Readiness Gates的值为 True 才会 Ready。</font>
+
 由于kubectl 的 patch 无法直接修改 status 的值，我们直接用 curl 测试
 ```shell
 cat  ~/.kube/config |grep client-certificate-data | awk -F ' ' '{print $2}' |base64 -d > ./client-cert.pem

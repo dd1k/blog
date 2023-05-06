@@ -21,6 +21,9 @@ googleAnalytics = "G-BDGDG0L0BB"
   # noreferrerLinks = true
   # nofollowLinks = true
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [taxonomies]
   tag = "tags"
   categories = "categories"
